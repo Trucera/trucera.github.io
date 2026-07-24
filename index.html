@@ -1,183 +1,584 @@
 <!DOCTYPE HTML>
 <!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    TRUCERA website based on Solid State by HTML5 UP
+    Original template: html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Solid State by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>TRUCERA | Precision Ceramic Tube Solutions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- TRUCERA European / US industrial style -->
+    <style>
+        :root {
+            --tr-blue-950: #101827;
+            --tr-blue-900: #172235;
+            --tr-blue-800: #22304a;
+            --tr-blue-700: #2f4264;
+            --tr-line: rgba(255,255,255,0.16);
+            --tr-text: rgba(255,255,255,0.88);
+            --tr-muted: rgba(255,255,255,0.64);
+            --tr-accent: #8fb4ff;
+            --tr-card: rgba(255,255,255,0.08);
+        }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        body {
+            background: var(--tr-blue-950);
+        }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+        /* Header */
+        #header {
+            background: rgba(16, 24, 39, 0.72);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
-						</div>
-					</section>
+        #header h1 a {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            letter-spacing: 0.18em;
+            font-weight: 700;
+        }
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+        .site-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            background: linear-gradient(135deg, #274b8f, #6f92df);
+            box-shadow: 0 10px 24px rgba(33, 72, 148, 0.35);
+        }
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+        /* Hero banner */
+        #banner {
+            min-height: 780px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(120deg, rgba(16,24,39,0.98) 0%, rgba(27,39,60,0.96) 48%, rgba(47,66,100,0.92) 100%),
+                radial-gradient(circle at 86% 28%, rgba(143,180,255,0.24), transparent 34%);
+        }
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+        #banner:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, rgba(16,24,39,0.20), rgba(16,24,39,0.02)),
+                repeating-linear-gradient(135deg, rgba(255,255,255,0.027) 0, rgba(255,255,255,0.027) 1px, transparent 1px, transparent 22px);
+            pointer-events: none;
+        }
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+        #banner:after {
+            content: '';
+            position: absolute;
+            right: -9vw;
+            bottom: -18vh;
+            width: 58vw;
+            height: 34vh;
+            background: linear-gradient(135deg, rgba(96,125,194,0.46), rgba(96,125,194,0));
+            transform: skewY(-5deg);
+            pointer-events: none;
+        }
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
+        #banner .inner {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1320px;
+            padding-top: 5.5em;
+        }
 
-					</section>
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(420px, 0.96fr) minmax(460px, 1fr);
+            gap: 84px;
+            align-items: center;
+        }
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+        .hero-copy {
+            max-width: 680px;
+        }
 
-			</div>
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 28px;
+            color: rgba(255,255,255,0.72);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .eyebrow:before {
+            content: '';
+            width: 42px;
+            height: 1px;
+            background: var(--tr-accent);
+        }
 
-	</body>
+        #banner h2 {
+            margin: 0 0 0.32em 0;
+            padding: 0;
+            border: 0;
+            color: #ffffff;
+            font-size: clamp(3.6rem, 6vw, 6.35rem);
+            line-height: 0.95;
+            letter-spacing: 0.18em;
+            font-weight: 800;
+        }
+
+        .hero-subtitle {
+            max-width: 590px;
+            margin: 0 0 1.6em 0 !important;
+            color: rgba(255,255,255,0.82) !important;
+            text-transform: none !important;
+            letter-spacing: 0.035em !important;
+            font-size: 1.15rem !important;
+            line-height: 1.7;
+        }
+
+        .hero-line {
+            width: min(100%, 620px);
+            height: 1px;
+            margin: 0 0 2.2em 0;
+            background: linear-gradient(90deg, rgba(255,255,255,0.42), rgba(255,255,255,0.04));
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin: 0 0 2.4em 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .hero-actions .button {
+            min-width: 168px;
+            height: 3.7em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            letter-spacing: 0.15em;
+        }
+
+        .hero-actions .button.primary {
+            background: #ffffff;
+            color: #111827 !important;
+            box-shadow: 0 18px 36px rgba(0,0,0,0.28);
+        }
+
+        .hero-actions .button.primary:hover {
+            background: #dbeafe;
+        }
+
+        .hero-proof {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            max-width: 620px;
+        }
+
+        .proof-item {
+            padding: 18px 18px 16px 18px;
+            border: 1px solid rgba(255,255,255,0.11);
+            background: rgba(255,255,255,0.045);
+            border-radius: 14px;
+        }
+
+        .proof-item strong {
+            display: block;
+            color: #ffffff;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .proof-item span {
+            display: block;
+            margin-top: 6px;
+            color: rgba(255,255,255,0.58);
+            font-size: 0.78rem;
+            line-height: 1.45;
+        }
+
+        .hero-visual {
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .visual-frame {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            padding: 22px;
+            border-radius: 34px;
+            background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+            border: 1px solid rgba(255,255,255,0.17);
+            box-shadow: 0 42px 90px rgba(0,0,0,0.36);
+            backdrop-filter: blur(12px);
+        }
+
+        .visual-frame:before {
+            content: '';
+            position: absolute;
+            inset: 18px;
+            border: 1px solid rgba(255,255,255,0.13);
+            border-radius: 26px;
+            pointer-events: none;
+        }
+
+        .visual-frame img {
+            width: 100%;
+            min-height: 340px;
+            max-height: 430px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .visual-caption {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            align-items: center;
+            padding: 18px 6px 4px 6px;
+        }
+
+        .visual-caption strong {
+            color: #ffffff;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+        }
+
+        .visual-caption span {
+            color: rgba(255,255,255,0.58);
+            text-align: right;
+            font-size: 0.78rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .floating-spec {
+            position: absolute;
+            left: -34px;
+            bottom: 42px;
+            width: 220px;
+            padding: 18px 20px;
+            border-radius: 18px;
+            background: rgba(16,24,39,0.74);
+            border: 1px solid rgba(255,255,255,0.16);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.34);
+            backdrop-filter: blur(14px);
+        }
+
+        .floating-spec small {
+            color: var(--tr-accent);
+            display: block;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .floating-spec p {
+            margin: 8px 0 0 0 !important;
+            color: rgba(255,255,255,0.82) !important;
+            letter-spacing: 0.04em !important;
+            text-transform: none !important;
+            font-size: 0.82rem !important;
+            line-height: 1.5;
+        }
+
+        /* Content sections */
+        #products h2,
+        #capabilities h2,
+        #applications h2,
+        #four h2 {
+            letter-spacing: 0.08em;
+        }
+
+        @media screen and (max-width: 1100px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 54px;
+            }
+
+            .hero-copy {
+                max-width: 760px;
+            }
+
+            .hero-visual {
+                min-height: auto;
+                justify-content: flex-start;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            #banner {
+                min-height: auto;
+            }
+
+            #banner .inner {
+                padding-top: 7em;
+            }
+
+            .hero-grid {
+                gap: 38px;
+            }
+
+            .hero-proof {
+                grid-template-columns: 1fr;
+            }
+
+            .visual-frame {
+                padding: 14px;
+                border-radius: 24px;
+            }
+
+            .visual-frame img {
+                min-height: 240px;
+                border-radius: 18px;
+            }
+
+            .visual-caption {
+                display: block;
+            }
+
+            .visual-caption span {
+                display: block;
+                margin-top: 6px;
+                text-align: left;
+            }
+
+            .floating-spec {
+                position: static;
+                width: auto;
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1>
+                <a href="index.html"><span class="site-mark">T</span>TRUCERA</a>
+            </h1>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#capabilities">Capabilities</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+                <a href="#" class="close">Close</a>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <div class="eyebrow">Technical Ceramics for Global Buyers</div>
+                        <h2>TRUCERA</h2>
+                        <div class="hero-line"></div>
+                        <p class="hero-subtitle">Precision ceramic tube solutions engineered for thermal stability, wear resistance, electrical insulation, and demanding industrial applications.</p>
+
+                        <ul class="actions hero-actions">
+                            <li><a href="#footer" class="button primary">Request Quote</a></li>
+                            <li><a href="#products" class="button">View Products</a></li>
+                        </ul>
+
+                        <div class="hero-proof">
+                            <div class="proof-item">
+                                <strong>Alumina</strong>
+                                <span>High temperature insulation and wear resistance</span>
+                            </div>
+                            <div class="proof-item">
+                                <strong>Zirconia</strong>
+                                <span>Tough ceramic option for precision components</span>
+                            </div>
+                            <div class="proof-item">
+                                <strong>Si3N4</strong>
+                                <span>Advanced ceramic material for demanding uses</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="visual-frame">
+                            <img src="images/Alumina-Group-6289.png" alt="Precision alumina ceramic tube products" />
+                            <div class="visual-caption">
+                                <strong>Precision Ceramic Tube Products</strong>
+                                <span>Custom sizes · Drawing based inquiry</span>
+                            </div>
+                        </div>
+                        <div class="floating-spec">
+                            <small>Material Focus</small>
+                            <p>Alumina · Zirconia · Silicon Nitride ceramic components for industrial projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <section id="wrapper">
+
+            <!-- One -->
+            <section id="products" class="wrapper spotlight style1">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="Ceramic tube products" /></a>
+                    <div class="content">
+                        <h2 class="major">Precision Ceramic Tubes</h2>
+                        <p>TRUCERA provides alumina, zirconia, and silicon nitride ceramic tube solutions for industrial buyers, equipment manufacturers, and project-based sourcing needs.</p>
+                        <a href="#footer" class="special">Request product information</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two -->
+            <section id="capabilities" class="wrapper alt spotlight style2">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic02.jpg" alt="Industrial ceramic manufacturing" /></a>
+                    <div class="content">
+                        <h2 class="major">Material and Manufacturing Capability</h2>
+                        <p>Suitable material options are available for wear resistance, electrical insulation, thermal stability, corrosion resistance, and precision machinery applications.</p>
+                        <a href="#footer" class="special">Discuss your requirements</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Three -->
+            <section id="applications" class="wrapper spotlight style3">
+                <div class="inner">
+                    <a href="#" class="image"><img src="images/pic03.jpg" alt="Ceramic tube applications" /></a>
+                    <div class="content">
+                        <h2 class="major">Industrial Applications</h2>
+                        <p>Products can support semiconductor equipment, thermal processing, electrical insulation, chemical handling, and high-performance mechanical systems.</p>
+                        <a href="#footer" class="special">Contact sales team</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Four -->
+            <section id="four" class="wrapper alt style1">
+                <div class="inner">
+                    <h2 class="major">Why Choose TRUCERA</h2>
+                    <p>We focus on reliable ceramic tube products, clear technical communication, and responsive export support for international industrial customers.</p>
+                    <section class="features">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic04.jpg" alt="Precision ceramic parts" /></a>
+                            <h3 class="major">Precision Components</h3>
+                            <p>Custom ceramic tubes and components for drawing-based inquiries and demanding dimensional requirements.</p>
+                            <a href="#footer" class="special">Send inquiry</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic05.jpg" alt="Ceramic materials" /></a>
+                            <h3 class="major">Advanced Materials</h3>
+                            <p>Material options covering alumina, zirconia, silicon nitride, and other technical ceramic requirements.</p>
+                            <a href="#footer" class="special">View material options</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic06.jpg" alt="Industrial supply" /></a>
+                            <h3 class="major">Export Support</h3>
+                            <p>Professional communication for overseas buyers, distributors, and industrial project teams.</p>
+                            <a href="#footer" class="special">Contact us</a>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic07.jpg" alt="Custom ceramic solutions" /></a>
+                            <h3 class="major">Custom Solutions</h3>
+                            <p>Support for sample evaluation, technical discussion, and project-based ceramic sourcing.</p>
+                            <a href="#footer" class="special">Request quote</a>
+                        </article>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major">Get in touch</h2>
+                <p>Tell us your ceramic tube material, drawing, quantity, application, and delivery requirement. Our team will review your inquiry and provide a professional response.</p>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+                <ul class="contact">
+                    <li class="icon solid fa-home">
+                        TRUCERA<br />
+                        Precision Ceramic Tube Solutions
+                    </li>
+                    <li class="icon solid fa-envelope"><a href="mailto:sales@trucera.com">sales@trucera.com</a></li>
+                    <li class="icon solid fa-globe"><a href="index.html">www.trucera.com</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; TRUCERA. All rights reserved.</li>
+                    <li>Design base: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
