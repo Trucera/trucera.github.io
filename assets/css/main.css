@@ -4161,9 +4161,7 @@ input, select, textarea {
     max-width:900px;
     text-align:center;
     margin:auto;
-}
-
-.hero-content{
+    margin-top:350px;
     flex:0 0 38%;
 }
 
