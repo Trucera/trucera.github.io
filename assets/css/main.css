@@ -4218,6 +4218,6 @@ input, select, textarea {
 .logo{
     position:absolute;
     top:50px;
-    left:80px;
+    left:50px;
     z-index:100;
 }
