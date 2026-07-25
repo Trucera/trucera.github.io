@@ -4162,7 +4162,7 @@ input, select, textarea {
     text-align:center;
    margin-left:auto;
    margin-right:auto;
-   transform:translateY(250px);
+   transform:translateY(320px);
     flex:0 0 38%;
 }
 
@@ -4175,10 +4175,10 @@ input, select, textarea {
 }
 
 .hero-subtitle{
-    font-size:26px;
+    font-size:22px;
     font-weight:300;
     color:#ffffff;
-	opacity:0.9;
+	opacity:0.8;
     letter-spacing:2px;
     text-transform:none;
     white-space:normal;
@@ -4195,8 +4195,8 @@ input, select, textarea {
     background:
 
     linear-gradient(
-        rgba(15,20,30,.45),
-        rgba(15,20,30,.45)
+        rgba(15,20,30,.25),
+        rgba(15,20,30,.25)
     ),
 
     url("../../images/Alumina-Group-6289.jpg");
