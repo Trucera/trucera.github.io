@@ -4178,6 +4178,7 @@ input, select, textarea {
     font-size:26px;
     font-weight:300;
     color:#ffffff;
+	opacity:0.9;
     letter-spacing:2px;
     text-transform:none;
     white-space:normal;
