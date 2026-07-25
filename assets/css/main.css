@@ -4180,13 +4180,9 @@ input, select, textarea {
     color:#ffffff;
     letter-spacing:2px;
     text-transform:none;
-    white-space:nowrap;
+    white-space:normal;
 }
 
-
-.logo img{
-    width:180px !important;
-}
 #banner{
 
     min-height:100vh;
