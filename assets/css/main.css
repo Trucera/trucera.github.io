@@ -4210,3 +4210,13 @@ input, select, textarea {
     width:280px !important;
     height:auto;
 }
+#banner{
+    position:relative;
+}
+
+.logo{
+    position:absolute;
+    top:50px;
+    left:80px;
+    z-index:100;
+}
