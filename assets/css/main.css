@@ -3703,7 +3703,7 @@ input, select, textarea {
 			}
            .wrapper.style2:before,
            .wrapper.style2:after{
-           display:none;
+           background-image:none;
            }
 
 		.wrapper.style3 {
