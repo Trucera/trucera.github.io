@@ -4170,11 +4170,6 @@ input, select, textarea {
     flex:0 0 38%;
 }
 
-.hero-image{
-    flex:0 0 62%;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
 }
 
 .hero-title{
@@ -4193,14 +4188,30 @@ input, select, textarea {
     text-transform:none;
 }
 
-.product-image{
-    width:100%;
-    max-width:950px;
-    height:auto;
-    display:block;
-    filter:drop-shadow(0 30px 60px rgba(0,0,0,.35));
-}
 
 .logo img{
     width:180px !important;
+}
+#banner{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+        rgba(15,20,30,.78),
+        rgba(15,20,30,.78)
+    ),
+
+    url("../../images/Alumina-Group-6289.jpg");
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
 }
