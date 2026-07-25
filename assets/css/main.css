@@ -4160,7 +4160,8 @@ input, select, textarea {
     width:900px;
     max-width:900px;
     text-align:center;
-    margin:auto;
+   margin-left:auto;
+   margin-right:auto;
     margin-top:350px;
     flex:0 0 38%;
 }
@@ -4174,7 +4175,7 @@ input, select, textarea {
 }
 
 .hero-subtitle{
-    font-size:34px;
+    font-size:26px;
     font-weight:300;
     color:#ffffff;
     letter-spacing:2px;
