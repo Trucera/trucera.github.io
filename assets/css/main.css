@@ -4161,12 +4161,12 @@ input, select, textarea {
 /* ===== TRUCERA HERO ===== */
 
 .hero-content{
-    width:900px;
-    max-width:900px;
+    width:800px;
+    max-width:800px;
     text-align:center;
    margin-left:auto;
    margin-right:auto;
-   transform:translateY(180px);
+   transform:translateY(160px);
     flex:0 0 38%;
 }
 
@@ -4227,7 +4227,7 @@ input, select, textarea {
 }
 .keywords{
 font-size:0.58em;
-font-weight:600;
+font-weight:500;
 opacity:0.85;
 letter-spacing:1px;
 margin-top:-0.5em;
