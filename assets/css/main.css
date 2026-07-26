@@ -4233,28 +4233,26 @@ letter-spacing:1px;
 margin-top:-0.5em;
 margin-bottom:1.5em;
 }
-/* TRUCERA Product Section */
+/* TRUCERA Product Typography */
 
 .wrapper.spotlight .content h2.major{
-    font-size:2.2em;
-    font-weight:700;
-    letter-spacing:3px;
+    font-size:2.4em !important;
+    font-weight:700 !important;
+    letter-spacing:3px !important;
+}
+
+.wrapper.spotlight .content p{
+    font-size:1.05em !important;
+    line-height:1.8 !important;
 }
 
 .wrapper.spotlight .content p:first-of-type{
-    font-size:1.35em;
-    font-weight:500;
-    line-height:1.7;
-}
-
-.wrapper.spotlight .content p:nth-of-type(2){
-    font-size:1.05em;
-    opacity:0.85;
-    line-height:1.8;
+    font-size:1.45em !important;
+    font-weight:500 !important;
 }
 
 .wrapper.spotlight .content strong{
-    font-size:0.9em;
-    letter-spacing:1px;
-    opacity:0.9;
+    font-size:0.85em !important;
+    letter-spacing:1px !important;
+    opacity:0.85 !important;
 }
