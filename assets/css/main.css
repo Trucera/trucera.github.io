@@ -3802,15 +3802,15 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 100%;
+				border-radius: 16px;
 				margin: 0 3em 2em 0;
-				width: 22em;
+				width: 30em;
 				overflow: hidden;
 				-ms-flex: 1;
 			}
 
 				.wrapper.spotlight .image img {
-					border-radius: 100%;
+					border-radius: 16px;
 					width: 100%;
 				}
 
