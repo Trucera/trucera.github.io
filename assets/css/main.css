@@ -4225,3 +4225,11 @@ input, select, textarea {
     left:30px;
     z-index:100;
 }
+.keywords{
+font-size:0.9em;
+font-weight:600;
+opacity:0.85;
+letter-spacing:1px;
+margin-top:-0.5em;
+margin-bottom:1.5em;
+}
