@@ -270,7 +270,32 @@ padding:40px;">
          margin:20px auto;">
 </div>
 <!-- 第二个弹窗结束 -->
+<!-- 第三个弹窗开始 -->
+<div id="customModal" style="display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+z-index:9999;
+overflow:auto;
+padding:40px;">
 
+    <span onclick="closeCustomSpecs()"
+    style="position:fixed;
+    right:30px;
+    top:20px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;">
+    ×
+    </span>
+
+    images/alumina-spec3.png
+
+</div>
+<!-- 第三个弹窗结束 -->
 <script>
 function openSpecs() {
     document.getElementById("specModal").style.display = "block";
