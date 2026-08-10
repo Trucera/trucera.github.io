@@ -397,7 +397,33 @@ cursor:pointer;">
      style="display:block;
      max-width:1000px;
      width:90%;
+<!-- Thermal弹窗开始 -->
+<div id="thermalModal" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+z-index:9999;
+overflow:auto;
+padding:40px;">
 
+<span onclick="closeThermal()"
+style="
+position:fixed;
+right:30px;
+top:20px;
+color:white;
+font-size:40px;
+cursor:pointer;">
+×
+</span>
+
+<img src="images/4.png"
+     style="display:block;
+   
 </div>		 
 <script>
 function openSpecs() {
